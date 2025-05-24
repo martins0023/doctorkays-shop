@@ -1,7 +1,7 @@
 // app/layout.jsx
 import "../styles/globals.css";
 
-export const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL);
+// export const metadataBase = new URL(process.env.NEXT_PUBLIC_SITE_URL);
 
 // Default metadata for SEO and social sharing
 export const metadata = {
@@ -16,11 +16,11 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://blog.doctorkays.com",
+    url: process.env.NEXT_PUBLIC_SITE_URL,
     siteName: "Doctor Kays",
     images: [
       {
-        url: "https://doctorkays.com/favicon.ico",
+        url: `${process.env.NEXT_PUBLIC_SITE_URL}/favicon.ico`,
         width: 1200,
         height: 630,
         alt: "Doctor Kays Logo",
@@ -31,7 +31,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Doctor Kays | Health & Wellness",
     description: "Trusted insights on health, pregnancy, and sex education.",
-    images: ["https://doctorkays.com/logo.svg"],
+    images: [`${process.env.NEXT_PUBLIC_SITE_URL}/logo.svg`],
     creator: "@DoctorKays",
   },
   // Google site verification

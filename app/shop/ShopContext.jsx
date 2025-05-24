@@ -44,7 +44,7 @@ const ShopContext = ({ isDarkMode }) => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6 }}
                 className="text-3xl sm:text-4xl md:text-5xl font-extrabold bg-clip-text text-transparent 
-                     bg-gradient-to-r from-zinc-200 via-fuchsia-300 to-purple-800 leading-relaxed pb-3"
+                     bg-gradient-to-r from-zinc-200 via-fuchsia-300 to-purple-800 leading-normal pb-3"
               >
                 Empowering your wellness journey to support your healthy
                 lifestyle.
